@@ -10,11 +10,20 @@ fun main(args: Array<String>) {
     val name = if (args.size > 0) args[0] else "kotlin"
     println(name)
     println("Hello, $name!")
+
+    if (args.size > 0) {
+        println("hello, ${args[0]}!")
+
+        println("Hello, ${if (args.size > 0) args[0] else "someone"}!")
+    }
+
+    println(createRandomRectangle().isSquare)
 }
 
 fun max(a: Int, b: Int) = if (a > b) a else b
 
 val question = "the"
+
 
 
 

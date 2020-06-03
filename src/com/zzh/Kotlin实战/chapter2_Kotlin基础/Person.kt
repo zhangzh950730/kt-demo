@@ -1,4 +1,4 @@
-package com.zzh
+package com.zzh.Kotlin实战.chapter2_Kotlin基础
 
 data class Person(
     val name: String,

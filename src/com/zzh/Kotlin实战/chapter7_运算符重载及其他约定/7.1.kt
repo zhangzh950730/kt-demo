@@ -6,9 +6,11 @@ package com.zzh.Kotlin实战.chapter7_运算符重载及其他约定
  */
 
 data class Point(val x: Int, val y: Int) {
-    operator fun plus(other: Point): Point {
-        return Point(x + other.x, y + other.y)
-    }
+
+}
+
+operator fun Point.plus(other: Point): Point {
+    return Point(x + other.x, y + other.y)
 }
 
 fun main() {

@@ -84,30 +84,12 @@ fun deInviteCode(code: String): Long {
 }
 
 fun main() {
-    var userId = 1L
-    var decimalToAlphabet = createInviteCode(userId)
-    println("decimalToAlphabet = ${decimalToAlphabet}")
-    var uid = deInviteCode(decimalToAlphabet)
-    println("uid = ${uid}")
+//    for (i in 100000000L..101000000L) {
+//        val inviteCode = createInviteCode(i)
+//        println("$i : $inviteCode")
+//    }
 
-    userId = 28L
-    decimalToAlphabet = createInviteCode(userId)
-    println("decimalToAlphabet = ${decimalToAlphabet}")
-    uid = deInviteCode(decimalToAlphabet)
-    println("uid = ${uid}")
-
-    userId = 100000000L
-    decimalToAlphabet = createInviteCode(userId)
-    println("decimalToAlphabet = ${decimalToAlphabet}")
-    uid = deInviteCode(decimalToAlphabet)
-    println("uid = ${uid}")
-
-
-    userId = 100000001L
-    decimalToAlphabet = createInviteCode(userId)
-    println("decimalToAlphabet = ${decimalToAlphabet}")
-    uid = deInviteCode(decimalToAlphabet)
-    println("uid = ${uid}")
-
+    val deInviteCode = deInviteCode("gmupjy")
+    println("deInviteCode = ${deInviteCode}")
 
 }
